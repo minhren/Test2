@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>城市列表</title>
+</head>
+<body>
+<h1>城市是</h1>
+<ul>{{ city.title }}</ul>
+<h1>省是</h1>
+<ul>{{ parent.title }}</ul>
+<h1>下面城市是</h1>
+<ul>
+    {% for child in children %}
+        <li>{{ child.title }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
